@@ -13,7 +13,7 @@ tickers_list = df['symbol'].tolist()
 
 def get_esg_data(stock_ticker):
     # Define the API endpoint with the stock ticker and API key
-    url = f"https://financialmodelingprep.com/api/v4/esg-environmental-social-governance-data?symbol={stock_ticker}&apikey=c1be0adf4239811e53c74255e93f467e"
+    url = f"https://financialmodelingprep.com/api/v4/esg-environmental-social-governance-data?symbol={stock_ticker}&apikey={apikey}"
     
     try:
         # Convert the response data into a dataframe
