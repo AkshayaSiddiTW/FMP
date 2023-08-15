@@ -11,7 +11,7 @@ tickers_list = df['symbol'].tolist()
 
 def get_fin_data(ticker):
     try:
-        url = f"https://financialmodelingprep.com/api/v3/income-statement/{ticker}?apikey=c1be0adf4239811e53c74255e93f467e"
+        url = f"https://financialmodelingprep.com/api/v3/income-statement/{ticker}?apikey={apikey}"
         
         df = pd.DataFrame(requests.get(url).json())
 
